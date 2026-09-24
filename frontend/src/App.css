@@ -47,6 +47,14 @@
   text-align: right;
 }
 
+.chat-message--assistant p {
+  background-color: #ffcccc;
+  color: #222;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  display: inline-block;
+}
+
 .chat-error {
   color: #f66;
   margin: 0;
