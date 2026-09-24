@@ -22,7 +22,9 @@ class ChatViewTests(TestCase):
         mock_get_chat_response.assert_called_once_with("Hello")
 
     @patch("chatbot.views.services.get_chat_response")
-    def test_blank_message_returns_400_without_calling_openai(self, mock_get_chat_response):
+    def test_blank_message_returns_400_without_calling_openai(
+        self, mock_get_chat_response
+    ):
         response = self.post_json({"message": "   "})
 
         self.assertEqual(response.status_code, 400)

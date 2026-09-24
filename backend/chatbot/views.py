@@ -1,7 +1,7 @@
 from openai import OpenAIError
+from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from rest_framework import status
 
 from . import services
 from .serializers import ChatRequestSerializer, ChatResponseSerializer
